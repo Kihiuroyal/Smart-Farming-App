@@ -3,3 +3,5 @@ joblib
 numpy
 requests
 Pillow
+xgboost
+
