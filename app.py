@@ -119,14 +119,12 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# Input Box Container
-with st.container():
-    city = st.text_input("📍 Enter your city or town:", value="Muranga", help="Enter any valid global city name.")
+# Input Box
+city = st.text_input("📍 Enter your city or town:", value="Muranga", help="Enter any valid global city name.")
 
-# Main Button
-st.button("Get Farming Advice")
-
-# Logic Execution
+# ----------------------------------------------------
+# Main Action Button (Only ONE button)
+# ----------------------------------------------------
 if st.button("Get Farming Advice"):
     with st.spinner("Fetching weather data..."):
         try:
@@ -162,6 +160,8 @@ if st.button("Get Farming Advice"):
 
         except Exception as e:
             st.error(f"⚠️ Error: {e}")
+
+
 
 
 
