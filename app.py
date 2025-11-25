@@ -103,18 +103,19 @@ if st.button("Get Farming Advice"):
             # -----------------------------------
             # Prediction Section
             # -----------------------------------
-            st.markdown("### 🔮 Predicted Temperature")
+            st.markdown("### Predicted Temperature")
             st.success(f"**{predicted_temp}°C** expected.")
 
             # -----------------------------------
             # Advice Section
             # -----------------------------------
-            st.markdown("### 🌾 Farming Advice")
+            st.markdown("### Farming Advice")
             for tip in advice_list:
                 st.markdown(f"- {tip}")
 
         except Exception as e:
             st.error(f"⚠️ Error: {e}")
+
 
 
 
